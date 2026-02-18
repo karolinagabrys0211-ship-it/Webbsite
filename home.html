@@ -1,37 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Pagetitle</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="header-container">
-                <img src="images/header.jpg" alt="A mountain">
-             <h1 class="header-title">TrailGuide</h1>
-             <h2 class="header-undertext">Your travel necessities</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailGuide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/header.jpg" alt="A mountain">
 
+            <div class="header-text">
+                <h1 class="header-title">TrailGuide</h1>
+                <h2 class="header-undertext">Your travel necessities</h2>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav>
             <ul>
-                <li><a href="home.html">Home </a></li>
-                <li><a href="trails.html">Shop </a></li>
-                <li><a href="about.html">About </a></li>
-              <li><a href="cart.html">Cart</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trails.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
-        </header>
-        <main>
-            <p class="main-title">Cottage Mountains</p>
-            <img class="content-img" src="images/main.jpg" alt="A mountainrange">
-            <p>Here is some text that will appear next to the image. More text can continue under the image when the space runs out.</p>
-            <p>Even more text below the image.</p>
-        </main>
-        <aside>
-            <img class="content-img" src="images/fire.jpg" alt="A mountainrange">
-        </aside>
-        <footer>
-            <p>This page was made by The Catsite</p>
-        </footer>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <p class="main-title">Cottage Mountains</p>
+
+        <!-- Main images wrapped in a container for proper layout -->
+        <div class="content-images">
+            <img src="images/main.jpg" alt="A mountain range">
+        </div>
+
+        <p class="bread-text">
+            Mountain exploring is more than a physical activity; it is a journey into some of the most awe-inspiring landscapes on Earth. From the towering peaks of Mount Everest to the rugged beauty of the Rocky Mountains, mountains have always called to those who seek challenge, solitude, and discovery. Their immense scale reminds us of both the power of nature and our own small place within it.
+        </p>
+
+        <p class="bread-text">
+            For many, mountain exploring begins with hiking. Trails wind through forests, across alpine meadows, and up rocky ridges, each step revealing new views and perspectives. As climbers ascend higher, the air grows thinner and the terrain more demanding. Reaching a summit, whether a modest hill or a legendary peak like Matterhorn, brings a profound sense of accomplishment. The reward is not only the panoramic vista but also the realization of one’s resilience and determination.
+        </p>
+
+        <p class="bread-text">
+            Preparation is essential in mountain exploration. Weather can change rapidly, and conditions may shift from bright sunshine to fierce storms within hours. Proper equipment, navigation skills, and respect for the environment are crucial. Many explorers also develop a deep appreciation for conservation, understanding that fragile mountain ecosystems must be protected for future generations. Beyond the physical challenge, mountain exploring offers mental clarity and connection with nature.
+        </p>
+        <a href="about.html" id="read-more">Read more here!</a>
+    </main>
+
+    <!-- ASIDE -->
+    <aside>
+        <p class="aside-title">Travels</p>
+        <div class="aside-images">
+            <img src="images/fire.jpg" alt="A mountain range">
+        </div>
+         <p class="bread-text">
+            Preparation is essential in mountain exploration. Weather can change rapidly, and conditions may shift from bright sunshine to fierce storms within hours. Proper equipment, navigation skills, and respect for the environment are crucial. Many explorers also develop a deep appreciation for conservation, understanding that fragile mountain ecosystems must be protected for future generations. Beyond the physical challenge, mountain exploring offers mental clarity and connection with nature.
+        </p>
+
+        
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <ul class="footer-list">
+            <li>This page was made by The TrailGuide team</li>
+            <li>Call 079 555 326 for customer service</li>
+        </ul>
+    </footer>
     </body>
 </html>
