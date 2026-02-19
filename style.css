@@ -71,7 +71,6 @@ body {
 /* ---------- HEADER ---------- */
 
 header {
-    background-color: darkcyan;
     grid-area: header;
 }
 
@@ -124,11 +123,10 @@ main {
 }
 
 .bread-text {
-    color: antiquewhite;
-    margin: 10px 20px;
-    font-size: clamp(10px, 2vw, 20px);
-    letter-spacing: 1px;
+    font-size: 16px;       /* default desktop size */
     line-height: 1.6;
+    max-width: 700px;      /* limits very wide text on desktop */
+    margin: 10px auto;     /* center text */
 }
 
 #read-more {
@@ -242,6 +240,7 @@ footer {
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "header"
             "main"
@@ -259,10 +258,20 @@ footer {
     aside {
         margin: 15px;
     }
+     .bread-text {
+        font-size: 20px;   /* bigger for easier reading */
+        max-width: 90%;    /* narrower lines for small screens */
+        line-height: 1.8;  /* slightly more spacing for readability */
+    }
 
-    .content-images img,
+    .content-images img {
+        flex: 1 1 100%; /* stack images on mobile */
+        margin: 0 auto 20px auto;
+    }
     .aside-images img {
         flex: 1 1 100%; /* stack images on mobile */
         margin: 0 auto 20px auto;
+        max-width: 90%;  /* shrink image on mobile */
+        height: auto;    /* still proportional */
     }
 }
