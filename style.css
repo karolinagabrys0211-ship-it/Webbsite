@@ -141,7 +141,7 @@ main {
     background-color: rgb(40, 72, 86);
     grid-area: main;
     margin: clamp(20px, 4vw, 60px);
-    margin-top: clamp(130px, 6vw, 80px);
+    margin-top: clamp(90px, 6vw, 80px);
 }
 
 .main-title {
@@ -196,7 +196,7 @@ aside {
     grid-area: aside;
     margin: clamp(20px, 4vw, 60px);
     margin-left: clamp(10px, 2vw, 40px);
-    margin-top: clamp(130px, 6vw, 80px);
+    margin-top: clamp(90px, 6vw, 80px);
 }
 
 .aside-title {
@@ -266,6 +266,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "header header"
+            "nav nav"
             "main main"
             "aside aside"
             "footer footer";
@@ -280,6 +281,7 @@ footer {
         grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "header"
+            "nav"
             "main"
             "aside"
             "footer";

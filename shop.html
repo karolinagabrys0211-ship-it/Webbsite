@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrailGuide</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -18,53 +19,43 @@
                 <h2 class="header-undertext">Your travel necessities</h2>
             </div>
         </div>
+    </header>
 
         <!-- NAVIGATION -->
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+  
 
     <!-- MAIN CONTENT -->
     <main>
-        <p class="main-title">Buy a TrailGuide book!</p>
+        <p class="main-title">Books</p>
+        <div class="main-columns">
 
-        <!-- Main images wrapped in a container for proper layout -->
-        <div class="shop-images">
-            <img src="images/trailguide-one.png" alt="A mountain range">
-        </div>
+    <div class="column">
+        <img src="images/trailguide-one.png" alt="Mountain">
+        <p>Mountain hiking offers breathtaking views and adventure.</p>
+        <button Id="book-one">Add to cart</button>
+    </div>
 
-        <p class="bread-text">
-            Mountain exploring is more than a physical activity; it is a journey into some of the most awe-inspiring landscapes on Earth. From the towering peaks of Mount Everest to the rugged beauty of the Rocky Mountains, mountains have always called to those who seek challenge, solitude, and discovery. Their immense scale reminds us of both the power of nature and our own small place within it.
-        </p>
+    <div class="column">
+        <img src="images/trailguide-one.png" alt="Forest">
+        <p>Forest trails provide peaceful escapes into nature.</p>
+        <button id="book-two">Add to cart</button>
+    </div>
 
-        <p class="bread-text">
-            For many, mountain exploring begins with hiking. Trails wind through forests, across alpine meadows, and up rocky ridges, each step revealing new views and perspectives. As climbers ascend higher, the air grows thinner and the terrain more demanding. Reaching a summit, whether a modest hill or a legendary peak like Matterhorn, brings a profound sense of accomplishment. The reward is not only the panoramic vista but also the realization of one’s resilience and determination.
-        </p>
-
-        <p class="bread-text">
-            Preparation is essential in mountain exploration. Weather can change rapidly, and conditions may shift from bright sunshine to fierce storms within hours. Proper equipment, navigation skills, and respect for the environment are crucial. Many explorers also develop a deep appreciation for conservation, understanding that fragile mountain ecosystems must be protected for future generations. Beyond the physical challenge, mountain exploring offers mental clarity and connection with nature.
-        </p>
-        <a href="about.html" id="read-more">Buy here!</a>
+    <div class="column">
+        <img src="images/trailguide-one.png" alt="Lake">
+        <p>Lake destinations are perfect for relaxing and exploring.</p>
+        <button id="book-three">Add to cart</button>
+    </div>
+    <div id="cart-container"></div>
     </main>
-
-    <!-- ASIDE -->
-    <aside>
-        <p class="aside-title">Travels</p>
-        
-        <div class="aside-images">
-            <img src="images/fire.jpg" alt="A mountain range">
-
-         <p class="bread-text">
-            Preparation is essential in mountain exploration. Weather can change rapidly, and conditions may shift from bright sunshine to fierce storms within hours. Proper equipment, navigation skills, and respect for the environment are crucial. Many explorers also develop a deep appreciation for conservation, understanding that fragile mountain ecosystems must be protected for future generations. Beyond the physical challenge, mountain exploring offers mental clarity and connection with nature.
-        </p>
-        </div>
-    </aside>
 
     <!-- FOOTER -->
     <footer>
