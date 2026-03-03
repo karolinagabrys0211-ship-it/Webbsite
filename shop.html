@@ -27,7 +27,7 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#" id="cart-link">Cart</a></li>
         </ul>
     </nav>
   
@@ -40,7 +40,7 @@
     <div class="column">
         <img src="images/trailguide-one.png" alt="Mountain">
         <p>Mountain hiking offers breathtaking views and adventure.</p>
-        <button Id="book-one">Add to cart</button>
+        <button id="book-one">Add to cart</button>
     </div>
 
     <div class="column">
@@ -54,7 +54,6 @@
         <p>Lake destinations are perfect for relaxing and exploring.</p>
         <button id="book-three">Add to cart</button>
     </div>
-    <div id="cart-container"></div>
     </main>
 
     <!-- FOOTER -->
@@ -64,5 +63,13 @@
             <li>Call 079 555 326 for customer service</li>
         </ul>
     </footer>
+    <div id="cart-popup" class="hidden">
+        <div class="cart-content">
+            <span id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-container"></div>
+            <button id="clear-cart">Clear cart</button>
+        </div>
+    </div>
     </body>
 </html>
