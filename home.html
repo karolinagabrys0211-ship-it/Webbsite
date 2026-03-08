@@ -6,6 +6,7 @@
     <title>TrailGuide</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="home.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -25,8 +26,7 @@
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#" id="cart-link">Cart</a></li>
         </ul>
     </nav>
   
@@ -51,7 +51,6 @@
         <p class="bread-text">
             Preparation is essential in mountain exploration. Weather can change rapidly, and conditions may shift from bright sunshine to fierce storms within hours. Proper equipment, navigation skills, and respect for the environment are crucial. Many explorers also develop a deep appreciation for conservation, understanding that fragile mountain ecosystems must be protected for future generations. Beyond the physical challenge, mountain exploring offers mental clarity and connection with nature.
         </p>
-        <a href="shop.html" id="read-more">Read more</a>
     </main>
 
     <!-- ASIDE -->
@@ -74,5 +73,13 @@
             <li>Call 079 555 326 for customer service</li>
         </ul>
     </footer>
+    <div id="cart-popup" class="hidden">
+        <div class="cart-content">
+            <span id="close-cart">&times;</span>
+            <h2 class = "cart-title">Your Cart</h2>
+            <div id="cart-container"></div>
+            <button id="clear-cart">Clear cart</button>
+        </div>
+    </div>
     </body>
 </html>

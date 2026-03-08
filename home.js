@@ -1,36 +1,7 @@
-const buttonOne = document.getElementById("book-one");
-const buttonTwo = document.getElementById("book-two");
-const buttonThree = document.getElementById("book-three");
-
 const cartLink = document.getElementById("cart-link");
 const cartPopup = document.getElementById("cart-popup");
 const closeCart = document.getElementById("close-cart");
 const clearCart = document.getElementById("clear-cart");
-
-function addToCart(id, name, price) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    cart.push({
-        id: id,
-        name: name,
-        price: price
-    });
-
-    localStorage.setItem("cart", JSON.stringify(cart));
-    displayCart();
-}
-
-buttonOne.addEventListener("click", function () {
-    addToCart(1, "Book-one", 50);
-});
-
-buttonTwo.addEventListener("click", function () {
-    addToCart(2, "Book-two", 120);
-});
-
-buttonThree.addEventListener("click", function () {
-    addToCart(3, "Book-three", 90);
-});
 
 function displayCart() {
 
@@ -81,5 +52,3 @@ clearCart.addEventListener("click", () => {
     localStorage.removeItem("cart");
     displayCart();
 });
-
-document.getElementById("cart-popup").classList.remove("hidden")
