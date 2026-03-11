@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailGuide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/header.jpg" alt="A mountain">
+
+            <div class="header-text">
+                <h1 class="header-title">TrailGuide</h1>
+                <h2 class="header-undertext">Your travel necessities</h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="#" id="cart-link">Cart</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Cart</h1>
+        <div id="cart-container"></div>
+        <button id="clear-cart">Clear cart</button>
+    </main>
+    <footer>
+        <ul class="footer-list">
+            <li>This page was made by The TrailGuide team</li>
+            <li>Call 079 555 326 for customer service</li>
+        </ul>
+    </footer>
+    <div id="cart-popup" class="hidden">
+        <div class="cart-content">
+            <span id="close-cart">&times;</span>
+            <h2 class = "cart-title">Your Cart</h2>
+            <div id="cart-container"></div>
+            <button id="clear-cart">Clear cart</button>
+            <a href="cart.html"><button id="full-cart">Display full cart</button></a>
+        </div>
+    </div>
+    </body>
+</html>
