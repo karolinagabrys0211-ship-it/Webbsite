@@ -3,6 +3,8 @@ const cartPopup = document.getElementById("cart-popup");
 const closeCart = document.getElementById("close-cart");
 const clearCart = document.getElementById("clear-cart");
 
+//The next 18 lines of code was adapted from https://www.youtube.com/watch?v=IY5UN82FZ2Q accessed 2026-03-02
+
 function displayCart() {
 
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -30,10 +32,7 @@ cartLink.addEventListener("click", (e) => {
     displayCart();
 });
 
-// =======================
 // Close cart popup
-// =======================
-// Click X
 closeCart.addEventListener("click", () => {
     cartPopup.classList.add("hidden");
 });
@@ -45,9 +44,7 @@ cartPopup.addEventListener("click", (e) => {
     }
 });
 
-// =======================
 // Clear cart button
-// =======================
 clearCart.addEventListener("click", () => {
     localStorage.removeItem("cart");
     displayCart();

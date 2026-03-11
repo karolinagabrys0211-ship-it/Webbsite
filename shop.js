@@ -7,6 +7,8 @@ const cartPopup = document.getElementById("cart-popup");
 const closeCart = document.getElementById("close-cart");
 const clearCart = document.getElementById("clear-cart");
 
+//The next 12 lines of code was adapted from https://www.youtube.com/watch?v=PoTGs38DR9E accessed 2026-02-26
+
 function addToCart(id, name, price) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -31,6 +33,8 @@ buttonTwo.addEventListener("click", function () {
 buttonThree.addEventListener("click", function () {
     addToCart(3, "Book-three", 90);
 });
+
+//The next 18 lines of code was adapted from https://www.youtube.com/watch?v=IY5UN82FZ2Q accessed 2026-03-02
 
 function displayCart() {
 
@@ -59,10 +63,8 @@ cartLink.addEventListener("click", (e) => {
     displayCart();
 });
 
-// =======================
+
 // Close cart popup
-// =======================
-// Click X
 closeCart.addEventListener("click", () => {
     cartPopup.classList.add("hidden");
 });
@@ -74,12 +76,10 @@ cartPopup.addEventListener("click", (e) => {
     }
 });
 
-// =======================
+
 // Clear cart button
-// =======================
 clearCart.addEventListener("click", () => {
     localStorage.removeItem("cart");
     displayCart();
 });
 
-document.getElementById("cart-popup").classList.remove("hidden")
